@@ -1,0 +1,9 @@
+<nav class="navbar navbar-light bg-faded">
+    <div class="container">
+        <a class="navbar-brand" href="/">Github Users</a>
+        <form class="form-inline float-xs-right" #searchForm="ngForm" (ngSubmit)="onSubmit(searchForm)">
+            <input class="form-control" type="text" placeholder="Search" name="username" ngModel required>
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
+</nav>

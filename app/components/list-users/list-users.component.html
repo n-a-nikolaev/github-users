@@ -1,0 +1,10 @@
+<div class="row">
+    <div class="col-xs-4 col-sm-3 col-md-2" *ngFor="let user of users">
+        <figure class="figure">
+            <img [src]="user.avatar_url" class="figure-img img-fluid rounded" [attr.alt]="user.login">
+            <figcaption class="figure-caption">
+                <a [routerLink]="generateUserRoute(user.login)">{{user.login}}</a>
+            </figcaption>
+        </figure>
+    </div>
+</div>
